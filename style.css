@@ -87,19 +87,23 @@ body {
 
 .box-1 {
     border-top: 5px solid var(--Cyan);
+    transform: translate(340px);
 }
 
 .box-2 {
     border-top: 5px solid var(--Red);
+    transform: translateY(120px);
     margin-bottom: 40px;
 }
 
 .box-3 {
     border-top: 5px solid var(--Orange);
+    transform: translateY(-120px);
 }
 
 .box-4 {
     border-top: 5px solid var(--Blue);
+    transform: translate(-340px);
 }
 
 .box-heading {
