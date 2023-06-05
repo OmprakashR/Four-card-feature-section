@@ -1,0 +1,145 @@
+/*Custome css for*/
+
+:root {
+    /* ### Primary */
+
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+    /* ### Neutral */
+
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+
+}
+
+
+*,
+*::after,
+*::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--Very-Light-Gray);
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.top-heading {
+    padding: 40px;
+    text-align: center;
+}
+
+.top-heading .heading {
+
+    color: var(--Very-Dark-Blue);
+    font-weight: 200;
+}
+
+.top-heading .para {
+    color: var(--Very-Dark-Blue);
+    font-weight: 600;
+    font-size: 2em;
+}
+
+.sub-para {
+    width: 40%;
+    text-align: center;
+    color: var(--Grayish-Blue);
+    font-weight: 400;
+    font-size: 15px;
+    margin: 0 auto;
+
+    padding-top: 20px;
+}
+
+.mid-section {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mid-section {
+    width: 80%;
+    padding: 20px 0px;
+    margin: 0 auto;
+}
+
+.box {
+    position: relative;
+    width: 300px;
+    padding: 20px;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px 0px hsla(229.1, 6.4%, 66.1%, 0.55);
+    background-color: white;
+}
+
+.box-1 {
+    border-top: 5px solid var(--Cyan);
+}
+
+.box-2 {
+    border-top: 5px solid var(--Red);
+    margin-bottom: 40px;
+}
+
+.box-3 {
+    border-top: 5px solid var(--Orange);
+}
+
+.box-4 {
+    border-top: 5px solid var(--Blue);
+}
+
+.box-heading {
+    font-size: 18px;
+    color: var(--Very-Dark-Blue);
+}
+
+.box-para {
+    margin-top: 10PX;
+    font-size: 12px;
+    color: var(--Grayish-Blue);
+
+}
+
+.icon {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
+
+footer {
+    margin-top: 30px;
+}
+
+@media (width <=990px) {
+    .mid-section {
+        flex-direction: column;
+    }
+
+    .sub-para {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .top-heading .heading {
+        font-size: 1.5em;
+    }
+
+    .top-heading .para {
+        font-weight: 600;
+        font-size: 1.5em;
+    }
+}
